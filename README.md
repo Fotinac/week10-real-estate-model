@@ -5,10 +5,10 @@ This project is part of **CST2216: Individual Term Project** at Algonquin Colleg
 It builds a modularized machine learning pipeline to predict real estate prices using multiple regression models. The app is deployed using Streamlit Cloud.
 
 ---
-
 ## Live App
 
-[Click here to try the app](https://fotinac-week10-real-estate-model.streamlit.app)
+[Click here to try the app](https://week10-real-estate-model-bawngwpzccx8kxumf36xbm.streamlit.app)
+
 
 ---
 
