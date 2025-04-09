@@ -1,0 +1,8 @@
+2025-04-08 20:49:51,332 - INFO - Data loaded successfully.
+2025-04-08 20:49:51,359 - INFO - Data split into training and testing sets.
+2025-04-08 20:49:51,364 - INFO - Model trained: LinearRegression
+2025-04-08 20:49:51,368 - INFO - Evaluation done. MSE: 11855575970.89, R²: 0.45
+2025-04-08 20:52:10,377 - INFO - Data loaded successfully.
+2025-04-08 20:52:10,397 - INFO - Data split into training and testing sets.
+2025-04-08 20:52:10,403 - INFO - Model trained: LinearRegression
+2025-04-08 20:52:10,407 - INFO - Evaluation done. MSE: 11855575970.89, R²: 0.45
