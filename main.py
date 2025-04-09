@@ -22,25 +22,25 @@ logging.basicConfig(filename='logs/app.log', level=logging.INFO, format='%(ascti
 
 def main():
     try:
-        # 🔹 1. Load data
+        # 1. Load data
         data_path = "data/final.csv"
         df = load_data(data_path)
         logging.info("Data loaded successfully.")
         
-        # 🔹 2. Split data
+        # 2. Split data
         X_train, X_test, y_train, y_test = split_data(df, target_column="price")
         logging.info("Data split into training and testing sets.")
 
-        # 🔹 3. Train model
+        # 3. Train model
         model = train_model(X_train, y_train)
         logging.info(f"Model trained: {model.__class__.__name__}")
 
-        # 🔹 4. Evaluate model
+        # 4. Evaluate model
         mse, r2 = evaluate_model(model, X_test, y_test)
         print(f"Model Performance:\nMSE: {mse:.2f}\nR²: {r2:.2f}")
         logging.info(f"Evaluation done. MSE: {mse:.2f}, R²: {r2:.2f}")
 
-        # 🔹 5. Visualize
+        # 5. Visualize
         predictions = model.predict(X_test)
         plot_actual_vs_predicted(y_test, predictions)
 
