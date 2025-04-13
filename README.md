@@ -1,88 +1,83 @@
 
-# Week 10 Real Estate Price Prediction App
-
-This project is part of **CST2216: Individual Term Project** at Algonquin College.  
-It builds a modularized machine learning pipeline to predict real estate prices using multiple regression models. The app is deployed using Streamlit Cloud.
+## Live App  
+[Click to open the app](https://your-streamlit-url.streamlit.app) <!-- Replace with your actual app URL -->
 
 ---
-## Live App
 
-[Click here to try the app](https://week10-real-estate-model-bawngwpzccx8kxumf36xbm.streamlit.app)
+# Real Estate Price Prediction App
 
+This is a Week 10 project for **CST2216: Business Intelligence System Infrastructure** at Algonquin College.  
+The app predicts real estate prices based on user inputs and a pre-trained linear regression model.
 
 ---
 
 ## Project Features
 
-- Load and preview real estate datasets
-- Train and evaluate models such as:
-  - Linear Regression
-  - Decision Tree Regressor
-  - Random Forest Regressor
-  - XGBoost Regressor *(optional)*
-- Evaluate model performance (MSE, R²)
-- Visualize predictions vs actual prices
-- Deploy and run via Streamlit Cloud
+- Clean and intuitive Streamlit user interface
+- Real-time user input for key housing features
+- Pre-trained Linear Regression model for fast prediction
+- Visual bar chart of predicted price
+- Fully modular and deployment-ready
 
 ---
 
 ## Folder Structure
 
 ```
-week10-real-estate-model/
-├── app.py                  ← Streamlit app script
-├── main.py                 ← Standalone script for training & testing
-├── requirements.txt        ← Project dependencies
-├── README.md               ← This file
-├── data/                   ← CSV dataset(s)
-├── models/                 ← ML model scripts (Linear, Tree, etc.)
-├── utils/                  ← Helpers (data loading, preprocessing, etc.)
-├── logs/                   ← Log files
+week10_real_estate_model/
+├── app_week10_load_model.py     ← Streamlit app (loads pre-trained model)
+├── train_and_save_model.py      ← Script to train and save model (optional)
+├── models/
+│   └── real_estate_model.pkl    ← Pre-trained model
+├── data/
+│   └── final.csv                ← Dataset used for training
+├── requirements.txt             ← Python dependencies
+├── README.md                    ← This file
 ```
 
 ---
 
 ## Run Locally
 
-1. Clone this repository:
+1. **Clone this repo:**
 ```bash
 git clone https://github.com/Fotinac/week10-real-estate-model.git
 cd week10-real-estate-model
 ```
 
-2. Install required packages:
+2. **Install dependencies:**
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Run the Streamlit app:
+3. **Run the app:**
 ```bash
-streamlit run app.py
+streamlit run app_week10_load_model.py
 ```
 
 ---
 
-## Dependencies
+## Features Used for Prediction
 
-Main packages used:
-- `pandas`
-- `scikit-learn`
-- `matplotlib`
-- `streamlit`
-
-*See `requirements.txt` for full details.*
+- `year_sold`
+- `property_tax`
+- `insurance`
+- `beds`, `baths`, `sqft`, `year_built`, `lot_size`, `property_age`
+- `basement`, `popular`, `recession`
+- `property_type_Bunglow`, `property_type_Condo`
 
 ---
 
-## ✍️ Author
+## Author
 
-- **Name**: Fotinacao
-- **Course**: CST2216 — Business Intelligence System Infrastructure
-- **Institution**: AC
-- **Instructor**: Swapnil Kangralkar
+- **Name**: Fotinacao  
+- **Course**: CST2216  
+- **Instructor**: Swapnil Kangralkar  
+- **Institution**: Algonquin College
 
 ---
 
 ## License
 
-This project is for academic purposes only.
+This project is for educational purposes only.
+
