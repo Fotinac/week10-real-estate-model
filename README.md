@@ -1,6 +1,6 @@
 
 ## Live App  
-[Click to open the app](https://your-streamlit-url.streamlit.app) <!-- Replace with your actual app URL -->
+[Click to open the app](https://week10-real-estate-model-d34ydl8cjghghgjwgc4d44.streamlit.app) 
 
 ---
 
