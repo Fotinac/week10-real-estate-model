@@ -3,37 +3,45 @@
 [Click to open the app](https://week10-real-estate-model-d34ydl8cjghghgjwgc4d44.streamlit.app) 
 
 ---
+# Real Estate Price Prediction Application
 
-# Real Estate Price Prediction App
+This app has been built using Streamlit and is designed to predict real estate prices based on various input features.
 
-This is a Week 10 project for **CST2216: Business Intelligence System Infrastructure** at Algonquin College.  
-The app predicts real estate prices based on user inputs and a pre-trained linear regression model.
+## Overview
+This application predicts real estate prices leveraging machine learning models trained on comprehensive real estate data.
 
----
+## Features
+- User-friendly interface powered by Streamlit.
+- Input form to enter details relevant to real estate properties such as location, size, number of rooms, etc.
+- Real-time prediction of property prices based on the trained model.
 
-## Project Features
+## Dataset
+The application utilizes a curated real estate dataset (`final.csv`) that includes features such as:
+- Property size
+- Location details
+- Number of bedrooms and bathrooms
+- Year built
+- And other relevant real estate market indicators.
 
-- Clean and intuitive Streamlit user interface
-- Real-time user input for key housing features
-- Pre-trained Linear Regression model for fast prediction
-- Visual bar chart of predicted price
-- Fully modular and deployment-ready
+## Technologies Used
+- **Streamlit**: For building the interactive web application.
+- **Scikit-learn and XGBoost**: For model training, evaluation, and predictions.
+- **Pandas and NumPy**: For data preprocessing and manipulation.
+- **Matplotlib and Seaborn**: For exploratory data analysis and visualization.
 
----
+## Models Included
+The predictive application includes various regression models such as:
+- Linear Regression
+- Decision Tree
+- Random Forest
+- XGBoost
 
-## Folder Structure
+These models have been trained, evaluated, and serialized for use within the application.
 
-```
-week10_real_estate_model/
-├── app_week10_load_model.py     ← Streamlit app (loads pre-trained model)
-├── train_and_save_model.py      ← Script to train and save model (optional)
-├── models/
-│   └── real_estate_model.pkl    ← Pre-trained model
-├── data/
-│   └── final.csv                ← Dataset used for training
-├── requirements.txt             ← Python dependencies
-├── README.md                    ← This file
-```
+## Future Enhancements
+- Incorporating additional datasets for regional analysis.
+- Adding explainability tools such as SHAP for model interpretability.
+- Expanding the application to include rental price predictions.
 
 ---
 
@@ -54,18 +62,6 @@ pip install -r requirements.txt
 ```bash
 streamlit run app_week10_load_model.py
 ```
-
----
-
-## Features Used for Prediction
-
-- `year_sold`
-- `property_tax`
-- `insurance`
-- `beds`, `baths`, `sqft`, `year_built`, `lot_size`, `property_age`
-- `basement`, `popular`, `recession`
-- `property_type_Bunglow`, `property_type_Condo`
-
 ---
 
 ## Author
